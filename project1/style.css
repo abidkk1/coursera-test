@@ -1,0 +1,115 @@
+#head {
+  text-align: center;
+}
+
+body {
+  padding: 5px;
+  margin: 5px;
+}
+
+div div {
+  background-color: rgb(216, 216, 216);
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+div h3 {
+  float: right;
+  display: inline-block;
+  background-color: orange;
+  padding: 3px;
+  margin: 0px;
+}
+
+div p {
+  display: inline-block;
+}
+
+/* Responsive styles */
+
+/* Mobiles */
+@media (max-width: 767px) {
+  div div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/*  Tablet */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  div div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  div .box1,.box2 {
+    width: 100%;
+    column-span: 4;
+  }
+
+  div div:nth-of-type(3) {
+    width: 90%;
+  }
+} */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Reset width and remove float */
+  div div {
+    width: auto;
+    float: none;
+  }
+
+  /* Display divs as inline-block elements */
+  div div {
+    display: inline-block;
+  }
+
+  /* Center divs on page */
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust width of .box1 and .box2 */
+  div .box1,
+  .box2 {
+    width: 44%;
+  }
+
+  /* Adjust width of third div */
+  div div:nth-of-type(3) {
+    width: 90%;
+  }
+
+  /* Add spacing between divs */
+  div div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+
+
+
+
+
+/* Labtop */
+@media (min-width: 991px) {
+  div div {
+    width: 30%;
+    float: left;
+
+  }
+}
+
+div{
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+margin-left: auto;
+margin-right: auto;  
+}
