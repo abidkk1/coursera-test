@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+                                        /* COMBINING SELECTORS */
+
+
+
+/* 01 :  Element with class selector */
+
+       h1.head1{
+            color: red;
+        }
+
+        
+       p.head1{
+            color: blue;
+        }
+
+
+/* 02 : Child selectors : only directly child element will be effected */
+h2 > p {
+    color: orange;
+}
+
+
+
+
+/* 03 : Descendent Selector */
+/* Every child element will be effected , it does not matter it is directly child or not */
+
+h4 h5 {
+    color: pink;
+}
+
+        
+      
+
+    </style>
+</head>
+<body>
+    <h1>Combining Selectors</h1>
+
+
+<!-- Method 1 -->
+    <div>
+        <p>Method 1 :</p>
+        <hr>
+        <h1 class="head1">Hello</h1>
+        <p class="head1">World</p>
+    </div>
+
+
+<!-- Method 2 -->
+<div>
+<h2>
+    Heading 2
+    <p>child</p>
+    <h3> <p>hello</p></h3>  <!---this p will not be effected beacaues this is not a directly child of h2 element -->
+</h2>
+</div>
+
+
+
+<!-- Method 3 -->
+<div>
+    <h4>
+        <h5> I am a directly child span</h5>
+        <div>
+            <h5>I am not a directly child span</h5>
+        </div>
+
+    </h4>
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
